@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
         android:text="TextView"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -33,7 +34,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:onClick="writeLogExample"
-        android:text="Button"
+        android:text="@string/button_writelog"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -43,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:onClick="tryCatchExample"
-        android:text="Button"
+        android:text="@string/button_trycatch"
         app:layout_constraintBaseline_toBaselineOf="@+id/button"
         app:layout_constraintStart_toEndOf="@+id/button" />
 
