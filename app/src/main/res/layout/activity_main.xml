@@ -7,7 +7,7 @@
     tools:context="info.trustzone.androidlogs.MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textHelloWorld"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -17,35 +17,37 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textVersion"
         android:layout_width="88dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
-        android:text="TextView"
+        android:layout_marginTop="16dp"
+        android:text="@string/textVersion"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textHelloWorld" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/WriteLog_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:onClick="writeLogExample"
         android:text="@string/button_writelog"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textVersion" />
 
     <Button
-        android:id="@+id/tryCatchExample"
+        android:id="@+id/TryCatch_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:onClick="tryCatchExample"
         android:text="@string/button_trycatch"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button"
-        app:layout_constraintStart_toEndOf="@+id/button" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/WriteLog_btn"
+        app:layout_constraintStart_toEndOf="@+id/WriteLog_btn" />
 
 </android.support.constraint.ConstraintLayout>

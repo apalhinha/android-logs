@@ -2,4 +2,5 @@
     <string name="app_name">AndroidLogs</string>
     <string name="button_writelog">Write Log</string>
     <string name="button_trycatch">Simple Try Catch</string>
+    <string name="textVersion">v0.1</string>
 </resources>
