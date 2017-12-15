@@ -15,9 +15,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void writeLogExample(View view) {
+        Log.i(TAG, "Here I go, writing in the log");
+    }
 
-
-    public void writeLog(View view) {
-        Log.i(TAG, "Here I go");
+    public void tryCatchExample(View view) {
+        Log.i(TAG, "I will now divide by 0");
+        try {
+            Log.i(TAG,"Value="+1/0);
+        } catch (Exception e) {
+            Log.e(TAG,"Ooops, error caught");
+        }
     }
 }
