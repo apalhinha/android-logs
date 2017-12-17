@@ -34,7 +34,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:onClick="writeLogExample"
+        android:onClick="btnWriteLog"
         android:text="@string/button_writelog"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textVersion" />
@@ -43,11 +43,23 @@
         android:id="@+id/TryCatch_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:onClick="tryCatchExample"
+        android:layout_marginStart="16dp"
+        android:onClick="btnTryCatch"
         android:text="@string/button_trycatch"
         app:layout_constraintBaseline_toBaselineOf="@+id/WriteLog_btn"
         app:layout_constraintStart_toEndOf="@+id/WriteLog_btn" />
+
+    <Button
+        android:id="@+id/activity_home_btn_nocatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="btnErrorNoCatch"
+        android:text="@string/activity_home_btn_nocatch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WriteLog_btn" />
 
 </android.support.constraint.ConstraintLayout>

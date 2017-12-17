@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+//import static android.webkit.ConsoleMessage.MessageLevel.LOG;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MyTag";
@@ -13,18 +15,27 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 
-    public void writeLogExample(View view) {
+    public void btnWriteLog(View view) {
         Log.i(TAG, "Here I go, writing in the log");
     }
 
-    public void tryCatchExample(View view) {
+    public void btnTryCatch(View view) {
+        int a;
         Log.i(TAG, "I will now divide by 0");
         try {
-            Log.i(TAG,"Value="+1/0);
+            a=0;
+            Log.i(TAG,"Value="+1/a);
         } catch (Exception e) {
             Log.e(TAG,"Ooops, error caught");
         }
+    }
+
+    public void btnErrorNoCatch(View view) {
+        ArrayErrorClass a = new ArrayErrorClass(3);
+        a.SetValue(4,1);
+
     }
 }
