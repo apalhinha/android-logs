@@ -11,7 +11,7 @@ import android.util.Log;
 class ArrayErrorClass {
     private int[] intArray;
 
-    private static final String TAG = "MyTag";
+    private static final String TAG = ArrayErrorClass.class.getSimpleName();
 
     public ArrayErrorClass() {
         intArray=new int[5];
