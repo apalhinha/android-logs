@@ -4,4 +4,6 @@
     <string name="button_trycatch">Simple Try Catch</string>
     <string name="textVersion">v0.1</string>
     <string name="activity_home_btn_nocatch">Error n\' No-Catch</string>
+    <string name="activity_home_btn_func_doing_thecatch">Function doing Catch</string>
+    <string name="activity_home_btn_throwcustom">Throw Custom</string>
 </resources>

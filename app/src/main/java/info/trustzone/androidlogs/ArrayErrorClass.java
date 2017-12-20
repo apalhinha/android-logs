@@ -29,10 +29,12 @@ class ArrayErrorClass {
     //    return intArray[aIdx];
     //}
 
-    public int GetValueCatch(int aIdx) {
+    int GetValueCatch(int aIdx) {
+        int res;
         try {
-            return intArray[aIdx];
-            //Log.i(TAG, "After Return");
+            res= intArray[aIdx];
+            return res;
+            //Log.i(TAG, "Wiered, after Return"); // Would originate compile error, unreachable
         } catch (Exception e) {
             Log.i(TAG, "Error caught");
         }
@@ -40,11 +42,16 @@ class ArrayErrorClass {
         return 0;
     }
 
-    //public int GetValueThrow(int aIdx) throws ArrayIndexOutOfBoundsException {
-    //    if (aIdx>= intArray.length) {
-    //        throw new ArrayIndexOutOfBoundsException("Max index is " + integer.ToString(aIdx));
-    //    } else {
-    //        return intArray[aIdx];
-    //    }
-    //}
+    private int GetValueThrow(int aIdx) throws CustomError {
+        // Throws a custom exception on index=2
+        if (aIdx == 2) {
+            throw new CustomError("idx cannot equal 2");
+        } else {
+            return intArray[aIdx];
+        }
+    }
+
+    int GetValueThrowInner(int aIdx) throws Exception {
+        return GetValueThrow(aIdx);
+    }
 }
